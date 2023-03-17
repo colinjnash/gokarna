@@ -48,4 +48,14 @@
     {{ if .Site.Params.CustomHeadHTML }}
     {{ .Site.Params.CustomHeadHTML | safeHTML }}
     {{ end }}
+
+    <!--- analytics -->
+      <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MCBL0Y3P3W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
+  gtag('config', 'G-MCBL0Y3P3W');
 </head>
